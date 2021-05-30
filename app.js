@@ -12,6 +12,12 @@ const data = {
 }
 
 // Making a POST request   
-HTTP.post('https://jsonplaceholder.typicode.com/users', data)
+// HTTP.post('https://jsonplaceholder.typicode.com/users', data)
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err));
+
+
+// Making a PUT request
+HTTP.put('https://jsonplaceholder.typicode.com/users/3', data)
     .then(data => console.log(data))
     .catch(err => console.log(err));
