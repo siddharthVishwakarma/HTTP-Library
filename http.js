@@ -50,4 +50,20 @@ class HTTPrequest {
             .then(err => reject(err));
         })
     }
+
+    // Make a http DELETE request
+    delete(url, data){
+        return new Promise((resolve, reject) => {
+            fetch(url, {
+                method: 'DELETE',
+                headers: {
+                    'Content-type' : 'application/json'
+                },
+            })
+            .then(res => res.json())
+            .then(() => resolve('Resource Deleated...'))
+            .then(err => reject(err));
+        })
+    }
+
 }
