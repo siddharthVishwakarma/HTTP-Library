@@ -16,7 +16,6 @@ const data = {
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err));
 
-
 // Making a PUT request (Update User)
 // HTTP.put('https://jsonplaceholder.typicode.com/users/3', data)
 //     .then(data => console.log(data))
